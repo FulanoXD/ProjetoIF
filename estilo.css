@@ -16,10 +16,22 @@ body {
   /* Cabeçalho */
   
   header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    background-color: #007bff; /* Cor do fundo */
+    color: #fff; /* Cor do texto */
+    padding: 20px 0; /* Ajuste o espaçamento conforme necessário */
+    text-align: center; /* Centraliza o conteúdo */
+    width: 100%;
+    transition: all 0.3s ease; /* Transição suave */
+  }
+  
+  /* A classe HeaderFixo será adicionada dinamicamente com JavaScript */
+  .HeaderFixo {
+    position: fixed; /* Fixa o header no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o header fique sobre outros elementos */
+    box-shadow: 0 4px 2px -2px gray; /* Sombra opcional para dar destaque */
   }
   
   .logo {
@@ -182,10 +194,6 @@ body {
       -webkit-flex-direction: column;
       flex-direction: column;
     }
-    .imagem1{
-      width: 100%;
-      height: auto;
-  }
 }
 
   
