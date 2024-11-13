@@ -1,0 +1,178 @@
+/* Estilo geral */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8FF;
+    color: #333;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Header */
+  
+  header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav li {
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  
+  nav li a {
+    color: #fff;
+  }
+  
+  /* Main */
+  
+  main {
+    padding: 40px 0;
+  }
+  
+  .compra-confirmada {
+    background-color: #F2F2F2;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .compra-confirmada h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .compra-confirmada p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .informacoes-compra {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .informacoes-compra h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .informacoes-compra ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .informacoes-compra li {
+    margin-bottom: 10px;
+  }
+  
+  .informacoes-compra li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .informacoes-compra li span {
+    font-weight: bold;
+  }
+  
+  .botao {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .botao:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Footer */
+  
+  footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .container-footer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .redes-sociais {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .redes-sociais li {
+    margin: 0 10px;
+  }
+  
+  .redes-sociais li a {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .redes-sociais li a:hover {
+    color: #F8F8FF;
+  }
+  
+  /* Responsividade */
+  
+  @media (max-width: 768px) {
+    .container-header,
+    .container-footer {
+      padding: 10px;
+    }
+  
+    .compra-confirmada {
+      padding: 20px;
+    }
+  
+    .informacoes-compra {
+      max-width: 100%;
+    }
+    @media (max-width: 600px) {
+      * {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+  }
+  
+}

@@ -1,0 +1,191 @@
+/* Estilo geral */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8FF;
+    color: #333;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Cabeçalho */
+  
+  header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* Cor do texto dentro do li para ficar branco */
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav li {
+    display: inline-block;
+    padding: 10px 20px; /* Adiciona padding para separar o texto da borda */
+  }
+
+  nav li a {
+    color: #fff; /* Cor do texto dentro do li para ficar branco */
+  }
+  
+  /* Seção Banner */
+  
+  .banner {
+    background-image: url('imagem-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner-content {
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .banner h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .botao {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .botao:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Seção Busca */
+  
+  .busca {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .busca h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .campos-busca {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .origem,
+  .destino,
+  .datas,
+  .passageiros {
+    margin: 10px;
+  }
+  
+  .origem label,
+  .destino label,
+  .datas label,
+  .passageiros label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .origem input,
+  .destino input,
+  .datas input,
+  .passageiros select {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .busca button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .busca button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Seções Promoção, Empresa e Contato */
+  
+  .promocao,
+  .empresa,
+  .contato {
+    text-align: center; /* Centraliza o texto das sections */
+    padding: 40px 0;
+    background-color: #F2F2F2;
+  }
+  
+  .promocao h2,
+  .empresa h2,
+  .contato h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .promocao p,
+  .empresa p,
+  .contato p {
+    margin-bottom: 15px;
+  }  
+
+  li {
+    list-style: none;
+  }
+
+  @media (max-width: 600px) {
+    * {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+    .imagem1{
+      width: 100%;
+      height: auto;
+  }
+}
+
+  
